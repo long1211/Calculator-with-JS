@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator with JS</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container-grid">
+        <div class="heading">
+            <span>
+                <i class="fas fa-history">
+                    <div id="history"></div>
+                </i>
+            </span>
+        
+            <span> <i class="fas fa-calculator"></i><i class="fas fa-calculator"></i><i class="fas fa-calculator"></i> </span>
+            <span>
+                <label>
+                    <input type="checkbox" name="theme">
+                    <span class="btn"></span>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </span>
+        </div>
+        <div id="result"></div>
+        <div class="calculate">
+            <div class="number">
+                <button class="btn" value="7">7</button>
+                <button class="btn" value="8">8</button>
+                <button class="btn" value="9">9</button>
+                <button class="btn" value="4">4</button>
+                <button class="btn" value="5">5</button>
+                <button class="btn" value="6">6</button>
+                <button class="btn" value="1">1</button>
+                <button class="btn" value="2">2</button>
+                <button class="btn" value="3">3</button>
+                <button class="btn" value="0">0</button>
+                <button class="btn" value=".">.</button>
+            </div>
+
+            <div class="operation">
+                <button class="btn" onclick="undo()">DEL</button>
+                <button class="btn" onclick="clean()">AC</button>
+                <button class="btn" value="*">x</button>
+                <button class="btn" value="/">/</button>
+                <button class="btn" value="+">+</button>
+                <button class="btn" value="-">-</button>
+                <button class="btn" onclick="equal()">=</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
