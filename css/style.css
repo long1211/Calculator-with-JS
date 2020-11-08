@@ -22,6 +22,7 @@ html[data-theme='dark'] {
     --btn-active: #424548;
 }
 
+/* Heading */
 .heading {
     display: flex;
     justify-content: space-between;
@@ -89,10 +90,10 @@ label input[type="checkbox"] {
 
 .number {
     background: var(--bg);
+    border-right: 1px solid var(--color-border);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    border-right: 1px solid var(--color-border);
+    grid-template-rows: repeat(4, 1fr);   
 }
 
 .operation {

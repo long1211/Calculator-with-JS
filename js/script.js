@@ -35,7 +35,6 @@ function showHistory() {
     for (let key in history) {
         log += history[key].expression + " = " + history[key].result + "<br>" + "<br>"
     }
-
     logHistory.innerHTML = log
 }
 
